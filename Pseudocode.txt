@@ -1,0 +1,22 @@
+
+
+
+
+
+
+
+	LCD Code Generator ( q , n , k)
+		combinations[] = findAllCombinations ( q , n , k )		// returns all the combinations of  C(q^n , k)
+		possibleBases[] = checkForBasis( combinations[] , q , n )	// returns the possible basis, linearly independence check
+		LCDBases[] = checkForLCD ( possibleBases[] , q , n , k )	// returns the LCD bases among all possible bases
+		minDistances[] = calculateMinDistance ( LCDBases[] , n )	// calculates the minimum distance for all LCD codes
+		largestMinDistance = findLargest ( mindDistance[] )		// finds the largest number
+		for each element i in LCDBases:					// for every code in LCDBases
+			if ( largestMinDistance == minDistance[i] )		// compare the minDistance of the C in LCDBases
+				print LCDBases[i]				// if they are equal print the bases of C
+
+
+
+
+
+
